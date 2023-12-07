@@ -25,9 +25,6 @@ Este é um projeto realizado pela turma de ADS da Escola e Faculdade Técnica SE
         - O projeto "Janela Automática" tem como objetivo automatizar uma janela, tomando ações com base nas condições climáticas. Se a previsão indicar alta probabilidade de chuva e ela realmente ocorrer, a janela será fechada; caso contrário, ela será aberta.
         - Para isso, sensores de umidade e dados de previsão do tempo de uma API externa serão utilizados. Um painel no ThingsBoard exibirá gráficos relacionados à probabilidade de chuva, histórico de aberturas e fechamentos, além de alertas sobre o estado da janela.
 
-## Capturas de Tela
-![Texto Alternativo](/caminho/para/a/imagem)
-
 ## Pré-requisitos
 Para executar nosso projeto, é recomendado:
 - Acesso à um computador ou laptop
@@ -61,6 +58,9 @@ Para executar nosso projeto, é recomendado:
 - Em manutenção.
 ### Backend
 - Tanto no host [local](http://127.0.0.1:8000/) ou [online](Xquad3.pythonanywhere.com), ao acessar a página será exibido dois caminhos:
+
+![Tela inicial/root API](/assets/img1.png)
+
 1. **Pump** [[local]](http://127.0.0.1:8000/pump/) [[online]](http://xquad3.pythonanywhere.com/pump/): Nestas URLs serão exibidos métodos para listar (GET) e inserir (POST). Se desejar deletar (DELETE) ou atualizar (PUT), será necessário uma busca específica, basta adicionar o ID do JSON escolhido no final da URL, exemplo: `http://xquad3.pythonanywhere.com/pump/1` ou `http://127.0.0.1:8000/pump/`.
 2. Para adicionar um JSON ao banco de dados, pode-se ser adicionado pela interface gráfica. Na parte inferior, os campos: Litros totais (litros totais adicionados na bomba de combustível) e Preço por litro (preço pago por cada litro).
 3. Também há outros dois modos de envio, ambos por JSON. Na aba Raw data, pode ser enviado um JSON ou, caso já tenha um maior conhecimento sobre ferramentas auxiliares como Postman, pode ser feita esta inserção com JSON. Um exemplo de inserção através deste método:
@@ -70,6 +70,10 @@ Para executar nosso projeto, é recomendado:
     "preco_por_litro": 5.19
 }
 ```
+
+![Tela Pump input da API](/assets/img2.0.png)
+![Tela Pump input da API](/assets/img2.png)
+![Tela Sensor input da API](/assets/img2.1.png)
 
 1. **Sensor** [[local]](http://127.0.0.1:8000/sensor/) [[online]](http://xquad3.pythonanywhere.com/sensor/): Nestas URLs serão exibidos métodos para listar (GET) e inserir (POST). Se desejar deletar (DELETE) ou atualizar (PUT), será necessário uma busca específica, basta adicionar o ID do JSON escolhido no final da URL, exemplo: `http://xquad3.pythonanywhere.com/sensor/1` ou `http://127.0.0.1:8000/sensor/1`.
 2. Para adicionar um JSON ao banco de dados, pode-se ser adicionado pela interface gráfica. Na parte inferior (em cao de muitos dados use a barra de rolagem lateral), os campos: Tempo operacao (Tempo em que o sensor captou fluidos), Litros totais (litros totais adicionados) e Litros por minuto (mostra quantos litros a bomba inseriu por minuto).
@@ -81,3 +85,7 @@ Para executar nosso projeto, é recomendado:
   "litros_por_minuto": 2.3
 }
 ```
+
+![Tela Sensor input da API](/assets/img3.0.png)
+![Tela Sensor input da API](/assets/img3.png)
+![Tela Sensor input da API](/assets/img3.1.png)
