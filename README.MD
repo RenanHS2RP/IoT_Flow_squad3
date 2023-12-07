@@ -13,7 +13,7 @@
 Este é um projeto realizado pela turma de ADS da Escola e Faculdade Técnica SENAI Gaspar Ricardo Jr. com o objetivo de criar uma integração com dois projetos da turma de Mecatrônica. Isso resultou na criação de uma interface, uma API e uma integração específica para cada projeto.
 
 ## Projetos:
-- **[Sensor de Combustível](https://github.com/seu-usuario/sua-repo):**
+- ### **[Sensor de Combustível](https://github.com/seu-usuario/sua-repo):**
     - *Descrição do Projeto:*
         - O projeto "Sensor de Combustível" tem como finalidade considerar o preço pago e a quantidade de combustível emitido pela bomba, comparando com o que foi realmente recebido e o preço correto de acordo com o posto.
         - O preço e a quantidade emitida pela bomba serão informados pelo cliente, mas o sensor enviará a quantidade correta de combustível. A API calculará e enviará o valor correto para o aplicativo mobile.
@@ -62,11 +62,22 @@ Para executar nosso projeto, é recomendado:
 ### Backend
 - Tanto no host [local](http://127.0.0.1:8000/) ou [online](Xquad3.pythonanywhere.com), ao acessar a página será exibido dois caminhos:
 1. **Pump** [[local]](http://127.0.0.1:8000/pump/) [[online]](http://xquad3.pythonanywhere.com/pump/): Nestas URLs serão exibidos métodos para listar (GET) e inserir (POST). Se desejar deletar (DELETE) ou atualizar (PUT), será necessário uma busca específica, basta adicionar o ID do JSON escolhido no final da URL, exemplo: `http://xquad3.pythonanywhere.com/pump/1` ou `http://127.0.0.1:8000/pump/`.
-2. Para adicionar um JSON ao banco, pode-se ser adicionado pela interface gráfica. Na parte inferior, os campos: Litros totais (litros totais adicionados na bomba de combustível) e Preço por litro (preço pago por cada litro).
+2. Para adicionar um JSON ao banco de dados, pode-se ser adicionado pela interface gráfica. Na parte inferior, os campos: Litros totais (litros totais adicionados na bomba de combustível) e Preço por litro (preço pago por cada litro).
 3. Também há outros dois modos de envio, ambos por JSON. Na aba Raw data, pode ser enviado um JSON ou, caso já tenha um maior conhecimento sobre ferramentas auxiliares como Postman, pode ser feita esta inserção com JSON. Um exemplo de inserção através deste método:
 ```JSON
 {
     "litros_totais": 60,
     "preco_por_litro": 5.19
+}
+```
+
+1. **Sensor** [[local]](http://127.0.0.1:8000/sensor/) [[online]](http://xquad3.pythonanywhere.com/sensor/): Nestas URLs serão exibidos métodos para listar (GET) e inserir (POST). Se desejar deletar (DELETE) ou atualizar (PUT), será necessário uma busca específica, basta adicionar o ID do JSON escolhido no final da URL, exemplo: `http://xquad3.pythonanywhere.com/sensor/1` ou `http://127.0.0.1:8000/sensor/1`.
+2. Para adicionar um JSON ao banco de dados, pode-se ser adicionado pela interface gráfica. Na parte inferior (em cao de muitos dados use a barra de rolagem lateral), os campos: Tempo operacao (Tempo em que o sensor captou fluidos), Litros totais (litros totais adicionados) e Litros por minuto (mostra quantos litros a bomba inseriu por minuto).
+3. Também há outros dois modos de envio, ambos por JSON. Na aba Raw data, pode ser enviado um JSON ou, caso já tenha um maior conhecimento sobre ferramentas auxiliares como Postman, pode ser feita esta inserção com JSON. Um exemplo de inserção através deste método:
+```JSON
+{
+  "tempo_operacao": "2023-12-07T12:30:00",
+  "litros_totais": 50.5,
+  "litros_por_minuto": 2.3
 }
 ```
