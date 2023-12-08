@@ -16,7 +16,7 @@ Este é um projeto realizado pela turma de ADS da Escola e Faculdade Técnica SE
 - ### **[Sensor de Combustível](https://github.com/seu-usuario/sua-repo):**
     - *Descrição do Projeto:*
         - O projeto "Sensor de Combustível" tem como finalidade considerar o preço pago e a quantidade de combustível emitido pela bomba, comparando com o que foi realmente recebido e o preço correto de acordo com o posto.
-        - O preço e a quantidade emitida pela bomba serão informados pelo cliente, mas o sensor enviará a quantidade correta de combustível. A API calculará e enviará o valor correto para o aplicativo mobile.
+        - O preço e a quantidade emitida pela bomba serão informados pelo cliente, também terão os dados conferidos pelo sensor, estes são enviados para uma API, que esta, calculará e enviará o valor correto para o aplicativo mobile.
 
 ### Projetos relacionados:
 
@@ -73,7 +73,7 @@ Para executar nosso projeto, é recomendado:
 
 ![Tela Pump input da API](/assets/img2.0.png)
 ![Tela Pump input da API](/assets/img2.png)
-![Tela Sensor input da API](/assets/img2.1.png)
+![Tela Pump input da API](/assets/img2.1.png)
 
 1. **Sensor** [[local]](http://127.0.0.1:8000/sensor/) [[online]](http://xquad3.pythonanywhere.com/sensor/): Nestas URLs serão exibidos métodos para listar (GET) e inserir (POST). Se desejar deletar (DELETE) ou atualizar (PUT), será necessário uma busca específica, basta adicionar o ID do JSON escolhido no final da URL, exemplo: `http://xquad3.pythonanywhere.com/sensor/1` ou `http://127.0.0.1:8000/sensor/1`.
 2. Para adicionar um JSON ao banco de dados, pode-se ser adicionado pela interface gráfica. Na parte inferior (em cao de muitos dados use a barra de rolagem lateral), os campos: Tempo operacao (Tempo em que o sensor captou fluidos), Litros totais (litros totais adicionados) e Litros por minuto (mostra quantos litros a bomba inseriu por minuto).
