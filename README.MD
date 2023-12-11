@@ -42,14 +42,14 @@ Para executar nosso projeto, é recomendado:
 3. Seu Frontend de IoT_Flow_squad3 estará instalado e pronto para rodar.
 
 ### Backend
-- *Nota: O Backend está hospedado em: [Xquad3.pythonanywhere.com](Xquad3.pythonanywhere.com), dezembro de 2023, não é efetivamente necessário rodar a API localmente para interagir com ela.*
+- *Nota: O Backend está hospedado em: [Xquad3.pythonanywhere.com](Xquad3.pythonanywhere.com), em dezembro de 2023, não é efetivamente necessário rodar a API localmente para interagir com ela.*
 1. No terminal, navegue até o repositório com o comando `cd /IoT_Flow_squad3/codigo/back/FlowAPIProject`.
 2. Execute o comando `python manage.py makemigrations` para criar migrações.
 3. Execute o comando `python manage.py migrate` para migrar.
 
 ## Inicialização
 ### Frontend
-- Execute o comando `npx run dev` para iniciar a interface. Um QR Code será gerado; ao escanear com o Expo Go, a página da interface será aberta.
+- Execute o comando `npx expo start` para iniciar a interface. Um QR Code será gerado; ao escanear com o Expo Go, a página da interface será aberta.
 ### Backend
 - Execute o comando `python manage.py runserver` para iniciar a API em: [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
 
