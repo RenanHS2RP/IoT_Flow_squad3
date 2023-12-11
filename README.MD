@@ -57,6 +57,10 @@ Para executar nosso projeto, é recomendado:
 ### Frontend
 - Ao acessar o QR code com um celular e com Expo go instalado, você será redirecionado para a página principal:
 
+![Tela inicial/root Mobile](/assets/imgMob1.jpeg)
+
+<img src="/assets/imgMob1.jpeg" alt="Tela inicial/root Mobile" width="50%">
+
 
 ### Backend
 - Tanto no host [local](http://127.0.0.1:8000/) ou [online](Xquad3.pythonanywhere.com), ao acessar a página será exibido dois caminhos:
