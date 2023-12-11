@@ -55,12 +55,16 @@ Para executar nosso projeto, é recomendado:
 
 ## Uso
 ### Frontend
-- Ao acessar o QR code com um celular e com Expo go instalado, você será redirecionado para a página principal:
 
-![Tela inicial/root Mobile](/assets/imgMob1.jpeg)
+Ao acessar o QR code com um celular e com o Expo Go instalado, você será direcionado para a página principal:
 
-<img src="/assets/imgMob1.jpeg" alt="Tela inicial/root Mobile" width="50%">
+<img src="/assets/imgMob2.jpeg" alt="Tela inicial/root Mobile" width="40%">
+Nesta página, você encontrará dois campos para inserir os valores, que serão fornecidos pela bomba de combustível: o montante total pago pela gasolina e a quantidade informada pela bomba. Dessa forma, o valor pago por litro será calculado e exibido.
 
+Ao clicar no ícone do painel de controle, localizado na parte inferior da página, você será redirecionado para a segunda tela:
+
+<img src="/assets/imgMob1.jpeg" alt="Tela inicial/root Mobile" width="40%">
+Nessa página, serão apresentados os litros captados pelo sensor, uma resposta com base nos valores inseridos anteriormente e um gráfico que mostra a quantidade de litros inserida a cada segundo.
 
 ### Backend
 - Tanto no host [local](http://127.0.0.1:8000/) ou [online](Xquad3.pythonanywhere.com), ao acessar a página será exibido dois caminhos:
