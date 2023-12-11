@@ -13,14 +13,14 @@
 Este é um projeto realizado pela turma de ADS da Escola e Faculdade Técnica SENAI Gaspar Ricardo Jr. com o objetivo de criar uma integração com dois projetos da turma de Mecatrônica. Isso resultou na criação de uma interface, uma API e uma integração específica para cada projeto.
 
 ## Projetos:
-- ### **[Sensor de Combustível](https://github.com/seu-usuario/sua-repo):**
+- ### **[Sensor de Combustível](https://github.com/RenanHS2RP/IoT_Flow_squad3/):**
     - *Descrição do Projeto:*
         - O projeto "Sensor de Combustível" tem como finalidade considerar o preço pago e a quantidade de combustível emitido pela bomba, comparando com o que foi realmente recebido e o preço correto de acordo com o posto.
         - O preço e a quantidade emitida pela bomba serão informados pelo cliente, também terão os dados conferidos pelo sensor, estes são enviados para uma API, que esta, calculará e enviará o valor correto para o aplicativo mobile.
 
 ### Projetos relacionados:
 
-- **[Janela Automática](https://github.com/RenanHS2RP/IoT_Window_squad3):**
+- **[Janela Automática](https://github.com/RenanHS2RP/IoT_Window_squad3/):**
     - *Descrição do Projeto:*
         - O projeto "Janela Automática" tem como objetivo automatizar uma janela, tomando ações com base nas condições climáticas. Se a previsão indicar alta probabilidade de chuva e ela realmente ocorrer, a janela será fechada; caso contrário, ela será aberta.
         - Para isso, sensores de umidade e dados de previsão do tempo de uma API externa serão utilizados. Um painel no ThingsBoard exibirá gráficos relacionados à probabilidade de chuva, histórico de aberturas e fechamentos, além de alertas sobre o estado da janela.
@@ -38,7 +38,7 @@ Para executar nosso projeto, é recomendado:
 
 ### Frontend
 1. No terminal, navegue até o repositório com o comando `cd /IoT_Flow_squad3/codigo/front/flow_app_mobile`.
-2. Execute o comando `npm install` para instalar todas as dependências do projeto.
+2. Execute o comando `npm install` ou `npm i` para instalar todas as dependências do projeto.
 3. Seu Frontend de IoT_Flow_squad3 estará instalado e pronto para rodar.
 
 ### Backend
@@ -49,13 +49,15 @@ Para executar nosso projeto, é recomendado:
 
 ## Inicialização
 ### Frontend
-- Execute o comando `npm run dev` para iniciar a interface. Um QR Code será gerado; ao escanear com o Expo Go, a página da interface será aberta.
+- Execute o comando `npx run dev` para iniciar a interface. Um QR Code será gerado; ao escanear com o Expo Go, a página da interface será aberta.
 ### Backend
 - Execute o comando `python manage.py runserver` para iniciar a API em: [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
 
 ## Uso
 ### Frontend
-- Em manutenção.
+- Ao acessar o QR code com um celular e com Expo go instalado, você será redirecionado para a página principal:
+
+
 ### Backend
 - Tanto no host [local](http://127.0.0.1:8000/) ou [online](Xquad3.pythonanywhere.com), ao acessar a página será exibido dois caminhos:
 
