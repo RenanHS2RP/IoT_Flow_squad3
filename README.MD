@@ -36,16 +36,22 @@ Para executar nosso projeto, é recomendado:
 - Ter um celular com Expo Go instalado
 
 ## Instalação
-- Copie este repositório com o comando `git clone --recurse-submodules https://github.com/RenanHS2RP/IoT_Flow_squad3.git` em uma pasta que desejar usando o terminal.
+- Copie este repositório com o comando: 
+
+    `git clone --recurse-submodules https://github.com/RenanHS2RP/IoT_Flow_squad3.git` 
+    
+    em uma pasta que desejar usando o terminal.
+
+- Se desejar examinar o código após clonar, acesse o repositório usando `cd .\IoT_Flow_squad3\` e, em seguida, execute `code .`. É necessário ter uma IDE como o VS Code para executar esse comando. Além disso, caso escolha seguir esse método, remova `\IoT_Flow_squad3` dos comandos a seguir.
 
 ### Frontend
-1. No terminal, navegue até o repositório com o comando `cd /IoT_Flow_squad3/codigo/front/flow_app_mobile`.
+1. No terminal, navegue até o repositório com o comando `cd .\IoT_Flow_squad3\codigo\front\flow_app_mobile\`.
 2. Execute o comando `npm install` ou `npm i` para instalar todas as dependências do projeto.
 3. Seu Frontend de IoT_Flow_squad3 estará instalado e pronto para rodar.
 
 ### Backend
 - *Nota: O Backend está hospedado em: [Xquad3.pythonanywhere.com](Xquad3.pythonanywhere.com), em dezembro de 2023, não é efetivamente necessário rodar a API localmente para interagir com ela.*
-1. No terminal, navegue até o repositório com o comando `cd /IoT_Flow_squad3/codigo/back/FlowAPIProject`.
+1. No terminal, navegue até o repositório com o comando `cd .\IoT_Flow_squad3\codigo\back\FlowAPIProject\`.
 2. Execute o comando `python manage.py makemigrations` para criar migrações.
 3. Execute o comando `python manage.py migrate` para migrar.
 
