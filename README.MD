@@ -9,6 +9,8 @@
 - [Inicialização](#inicialização)
 - [Uso](#uso)
 
+## [Video Pitch](https://drive.google.com/file/d/1j4uJrHLrrpB4-vBhnNiWlpJUyzlEzYYj/view?usp=sharing)
+
 ## Descrição
 Este é um projeto realizado pela turma de ADS da Escola e Faculdade Técnica SENAI Gaspar Ricardo Jr. com o objetivo de criar uma integração com dois projetos da turma de Mecatrônica. Isso resultou na criação de uma interface, uma API e uma integração específica para cada projeto.
 
@@ -30,8 +32,8 @@ Para executar nosso projeto, é recomendado:
 - Acesso à um computador ou laptop
 - Uma IDE como Visual Studio Code
 - Conhecimento básico em terminais
-- Conhecimento básico em envio de JSON (back)
-- Ter um celular com Expo Go instalado (front)
+- Conhecimento básico em envio de JSON
+- Ter um celular com Expo Go instalado
 
 ## Instalação
 - Copie este repositório com o comando `git clone --recurse-submodules https://github.com/RenanHS2RP/IoT_Flow_squad3.git` em uma pasta que desejar usando o terminal.
@@ -49,7 +51,7 @@ Para executar nosso projeto, é recomendado:
 
 ## Inicialização
 ### Frontend
-- Execute o comando `npx expo start` para iniciar a interface. Um QR Code será gerado; ao escanear com o Expo Go, a página da interface será aberta.
+- Para iniciar a interface, execute o comando npx expo start. Um código QR será gerado, e ao escaneá-lo com a câmera, a página da interface será aberta utilizando o Expo Go.
 ### Backend
 - Execute o comando `python manage.py runserver` para iniciar a API em: [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
 
